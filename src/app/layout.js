@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Web de salud",
+  title: "Salud central",
   description: "Pagina web de salud hecha por rugby01",
 };
 
