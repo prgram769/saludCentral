@@ -1,11 +1,12 @@
-import { ThemeProvider } from "./themeProvider";
+// import { ThemeProvider } from "./themeProvider";
 
 const { useState, useEffect, useContext } = require("react");
 const { Button } = require("./button");
 
 function Header() {
-  const {theme, setTheme} = useContext(ThemeProvider);
-
+  // const {theme, setTheme} = useContext(ThemeProvider);
+  const [theme, setTheme] = useState("light");
+  
   useEffect(() => {
     if (theme === "light") {
       document.querySelector("div.mainDiv").classList.add("light");
@@ -16,7 +17,7 @@ function Header() {
   }, [theme]);
 
   function changeTheme() {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
+    theme === "dark" ? setTheme("light") && localStorage.setItem("theme", theme) : setTheme("dark") && localStorage.setItem("theme", theme);
   }
 
   return (
