@@ -6,28 +6,37 @@ const { Button } = require("./button");
 function Header() {
   // const {theme, setTheme} = useContext(ThemeProvider);
   const [theme, setTheme] = useState("light");
-  
+
   useEffect(() => {
-    if (theme === "light") {
-      document.querySelector("div.mainDiv").classList.add("light");
-    } else {
-      document.querySelector("div.mainDiv").classList.remove("light");
-      document.querySelector("div.mainDiv").classList.add("dark");
-    }
+    // if (localStorage.getItem("theme") === null) {
+      if (theme === "light") {
+        document.querySelector("div.mainDiv").classList.add("light");
+
+        localStorage.setItem("theme", theme);
+      } else {
+        document.querySelector("div.mainDiv").classList.remove("light");
+        document.querySelector("div.mainDiv").classList.add("dark");
+
+        localStorage.setItem("theme", theme);
+      }
+    // } else {
+    //   document.querySelector("div.mainDiv").classList.add(localStorage.getItem("theme"));
+    // }
   }, [theme]);
 
   function changeTheme() {
-    theme === "dark" ? setTheme("light") && localStorage.setItem("theme", theme) : setTheme("dark") && localStorage.setItem("theme", theme);
+    theme === "dark" ? setTheme("light") : setTheme("dark");
   }
 
   return (
     <>
-      <h1 className="h1 m-5 text-black text-[20px]">
+      <h1 className="h1 m-5 text-black text-[20px] font-bold">
         WEB DONDE SE PUBLICAN ARTÍCULOS RELACIONADOS CON LA SALUD
       </h1>
       {theme === "dark" ? (
         <Button
           onClick={changeTheme}
+          className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
           text={
             <svg
               className="h-14 w-14"
@@ -44,6 +53,7 @@ function Header() {
       ) : (
         <Button
           onClick={changeTheme}
+          className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
           text={
             <svg
               className="h-14 w-14"
