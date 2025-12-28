@@ -1,6 +1,12 @@
 const { Button } = require("./button");
 
-function MainPage() {
+function MainPage({isAlimentation, setAlimentation}) {
+
+  function changePage() {
+    isAlimentation ? console.log("es Alimentación") : console.log("no es alimentacion");
+    !isAlimentation ? setAlimentation(true) : null
+  }
+
   return (
     <div className="m-3 rounded flex flex-col justify-center items-center">
       <h1 className="bg-blue-400 m-3 w-65 px-2 py-1 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
@@ -10,6 +16,7 @@ function MainPage() {
         <Button
           className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
           text={"Alimentación"}
+          onClick={changePage}
         />
         <Button
           className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
