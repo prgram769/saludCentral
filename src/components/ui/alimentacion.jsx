@@ -2,11 +2,11 @@ import { Button } from "./button";
 
 function Alimentacion() {
   return (
-    <div>
-      <h1>INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA</h1>
-      <div>
-        <h2>Datos y cifras</h2>
-        <ul>
+    <div className="flex flex-col min-h-screen dark:bg-[#222]">
+      <h1 className="font-bold bg-green-500 text-black flex justify-center items-center">INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA</h1>
+      <div className="border-2 border-red-500 flex justify-center items-center mb-2">
+        <h2 className="flex justify-center items-center bg-[#AFD06E] text-black font-bold m-7">Datos y cifras</h2>
+        <ul className="list-disc px-2 py-1 m-2">
           <li>
             Una dieta saludable ayuda a protegernos de la malnutrición en todas
             sus formas, así como de las enfermedades no transmisibles, entre
@@ -44,9 +44,9 @@ function Alimentacion() {
         </ul>
       </div>
       <img src="" />
-      <div>
-        <h2>Dieta sana para adultos</h2>
-        <ul>
+      <div className="border-2 border-red-500 flex justify-center items-center mt-2">
+        <h2 className="flex justify-center items-center bg-[#AFD06E] text-black font-bold m-7">Dieta sana para adultos</h2>
+        <ul className="list-disc px-2 py-1 m-2">
           <li>
             Frutas, verduras, legumbres (tales como lentejas y alubias), frutos
             secos y cereales integrales (por ejemplo, maíz, mijo, avena, trigo o
@@ -92,7 +92,7 @@ function Alimentacion() {
       </div>
       <footer>
         <p>
-          <a href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet">Página originaria de la información (OMS)</a>
+          <a className="bg-gray-400 font-bold" href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet">Página originaria de la información (OMS)</a>
         </p>
         <Button text={"Página principal"} className={"bg-blue-500 text-black"}/>
       </footer>
