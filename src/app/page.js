@@ -18,7 +18,7 @@ export default function Home() {
         <Alimentacion />
       ) : (
         <>
-          <div className="mainDiv min-h-[95.6vh] items-center justify-center font-sans bg-white">
+          <div className="mainDiv min-h-[95.6vh] items-center justify-center font-sans dark:bg-[#222]">
             <div className="flex justify-center items-center bg-[#87AECE]">
               <Header />
             </div>
