@@ -2,14 +2,14 @@ import { Button } from "./button";
 
 function Alimentacion() {
   return (
-    <>
+    <div className="min-h-screen light">
       {" "}
-      <h1 className="font-bold bg-green-500 text-black flex justify-center items-center">
+      <h1 className="font-bold bg-green-500 text-black text-center">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA
       </h1>
-      <div className="min-h-screen grid grid-cols-4 gap-4 items-start light">
-        <div className="border-2 border-red-500 text-center w-70 text-[13px] m-2">
-          <h2 className="flex rounded px-2 py-1 justify-center items-center bg-[#AFD06E] text-black font-bold m-7">
+      <div className="flex h-[91.5vh] justify-center items-center">
+        <div className="border-2 border-orange-300 text-center w-90 text-[13px] m-2">
+          <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Datos y cifras
           </h2>
           <ul className="list-disc px-2 py-1 m-2">
@@ -52,11 +52,11 @@ function Alimentacion() {
           </ul>
         </div>
         <img
-          className="px-2 py-1 m-3 border-2 border-red-500 h-120 w-180"
+          className="px-2 py-1 m-3 border-2 border-orange-300 h-120 w-160"
           src="/platoOMSwikipedia.jpg"
         />
-        <div className="border-2 border-red-500 text-center text-[13px] w-70 m-2">
-          <h2 className="flex rounded px-2 py-1 justify-center items-center bg-[#AFD06E] text-black font-bold m-7">
+        <div className="border-2 border-orange-300 text-center text-[13px] w-100 m-2">
+          <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Dieta sana para adultos
           </h2>
           <ul className="list-disc px-2 py-1 m-2">
@@ -105,22 +105,24 @@ function Alimentacion() {
             </li>
           </ul>
         </div>
-        <footer>
-          <p>
-            <a
-              className="bg-gray-400 font-bold"
-              href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
-            >
-              Página originaria de la información (OMS)
-            </a>
-          </p>
-          <Button
-            text={"Página principal"}
-            className={"bg-blue-500 text-black"}
-          />
-        </footer>
       </div>
-    </>
+      <footer className="bg-emerald-200 px-3 py-1 flex justify-center items-center">
+        <p>
+          <a
+            className="bg-emerald-100 font-bold rounded px-2 py-1 m-2"
+            href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Página originaria de la información (OMS)
+          </a>
+        </p>
+        <Button
+          text={"Página principal"}
+          className={"bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"}
+        />
+      </footer>
+    </div>
   );
 }
 
