@@ -1,4 +1,4 @@
-function GymRoutine({isGymRoutine, setGymRoutine}) {
+function GymRoutine({nPage, setNPage}) {
   return (
   	<div className="min-h-screen light">
       <h1>EJERCICIO Y DIETAS</h1>

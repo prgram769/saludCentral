@@ -1,9 +1,17 @@
 import { Button } from "./button";
 
-function Alimentacion({isAlimentation, setAlimentation}) {
+function Alimentacion({nPage, setNPage}) {
+
+  let content;
 
   function changeMainPage() {
-    isAlimentation ? setAlimentation(false) : null; 
+    // isAlimentation === 0 ? setAlimentation(1) : null; 
+
+    if (nPage == 0) {
+      setNPage(1);
+    } else {
+      setNPage(0);
+    }
   }
 
   return (

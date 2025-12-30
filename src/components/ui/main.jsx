@@ -1,9 +1,17 @@
 const { Button } = require("./button");
 
-function MainPage({isAlimentation, setAlimentation}) {
+function MainPage({nPage, setNPage}) {
 
   function changePage() {
-    !isAlimentation ? setAlimentation(true) : null
+    // !nPage ? setNPage(true) : null
+
+    console.log(event.target.getAttribute("class"));
+
+    if (event.target.getAttribute("class").includes("alimentationBtn") == true) {
+      setNPage(1);
+    } else if (event.target.getAttribute("class").includes("gymRoutineBtn" ) == true) {
+      setNPage(2);
+    }
   }
 
   return (
@@ -13,13 +21,14 @@ function MainPage({isAlimentation, setAlimentation}) {
       </h1>
       <div>
         <Button
-          className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
+          className={"btn alimentationBtn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
           text={"Alimentación"}
           onClick={changePage}
         />
         <Button
           className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
           text={"Rutina gym"}
+          onClick={changePage}
         />
       </div>
       <h1 className="bg-blue-400 m-3 w-70 px-2 py-1 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
@@ -27,7 +36,7 @@ function MainPage({isAlimentation, setAlimentation}) {
       </h1>
       <div>
         <Button
-          className={"btn m-3 bg-[#878BCE] h-10 w-50 px-2 rounded-2xl"}
+          className={"btn gymRoutineBtn m-3 bg-[#878BCE] h-10 w-50 px-2 rounded-2xl"}
           text={"Condiciones comunes"}
         />
         <Button
