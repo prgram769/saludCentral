@@ -3,7 +3,6 @@ const { Button } = require("./button");
 function MainPage({isAlimentation, setAlimentation}) {
 
   function changePage() {
-    isAlimentation ? console.log("es Alimentación") : console.log("no es alimentacion");
     !isAlimentation ? setAlimentation(true) : null
   }
 

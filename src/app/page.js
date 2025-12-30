@@ -15,7 +15,7 @@ export default function Home() {
     <>
       {" "}
       {isAlimentation ? (
-        <Alimentacion />
+        <Alimentacion isAlimentation={isAlimentation} setAlimentation={setAlimentation}/>
       ) : (
         <>
           <div className="mainDiv min-h-[95.6vh] items-center justify-center font-sans dark:bg-[#222]">

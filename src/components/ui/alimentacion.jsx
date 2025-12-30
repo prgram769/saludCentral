@@ -1,6 +1,11 @@
 import { Button } from "./button";
 
-function Alimentacion() {
+function Alimentacion({isAlimentation, setAlimentation}) {
+
+  function changeMainPage() {
+    isAlimentation ? setAlimentation(false) : null; 
+  }
+
   return (
     <div className="min-h-screen light">
       {" "}
@@ -109,7 +114,7 @@ function Alimentacion() {
       <footer className="bg-emerald-200 px-3 py-1 flex justify-center items-center">
         <p>
           <a
-            className="bg-emerald-100 font-bold rounded px-2 py-1 m-2"
+            className="bg-emerald-100 font-bold rounded px-2 py-2 m-2"
             href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
             target="_blank"
             rel="noopener noreferrer"
@@ -120,6 +125,7 @@ function Alimentacion() {
         <Button
           text={"Página principal"}
           className={"bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"}
+          onClick={changeMainPage}
         />
       </footer>
     </div>
