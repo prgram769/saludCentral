@@ -26,7 +26,7 @@ function MainPage({nPage, setNPage}) {
           onClick={changePage}
         />
         <Button
-          className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
+          className={"btn gymRoutineBtn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
           text={"Rutina gym"}
           onClick={changePage}
         />
