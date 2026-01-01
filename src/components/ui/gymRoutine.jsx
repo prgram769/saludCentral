@@ -2,11 +2,14 @@ function GymRoutine({ nPage, setNPage }) {
   return (
     <div className="min-h-screen light flex flex-col">
       <h1 className="text-center font-bold text-[40px]">EJERCICIO Y DIETAS</h1>
-      <div className="border-2 w-96">
-        <h2 className="border-b-2 font-bold text-[22px]">Rutina de gym</h2>
-        <table className="text-center">
+      <div>
+        <table className="m-auto px-2 py-1 mt-5 w-3/12 text-center">
+          <caption className="border-b-2 border-t-2 mb-4 font-bold text-[22px]">
+            Rutina de gym
+          </caption>
+
           <thead>
-            <tr>
+            <tr className="border-b">
               <th>Dias de la semana</th>
               <th>Entrenamiento</th>
             </tr>
@@ -43,12 +46,12 @@ function GymRoutine({ nPage, setNPage }) {
           </tbody>
         </table>
       </div>
-      <div>
-        <h2>Dietas</h2>
-        <div>
-          <h3>Dieta mediterránea</h3>
-          <p>Características principales:</p>
-          <ul>
+      <div className="w-250">
+        <h2 className="font-bold text-[22px] text-center border-b-2 border-t-2 m-auto mt-5 px-2 py-1 w-3/12">Dietas</h2>
+        <div className="border-2 m-5 px-3 rounded-3xl py-1">
+          <h3 className="text-center border-b m-auto w-3/12 font-bold">Dieta mediterránea</h3>
+          <p className="font-semibold py-1">Características principales:</p>
+          <ul className="list-disc px-6 py-1">
             <li>
               Énfasis en alimentos vegetales: Abundancia de frutas, verduras,
               legumbres, cereales integrales, frutos secos y semillas.
@@ -79,13 +82,10 @@ function GymRoutine({ nPage, setNPage }) {
             </li>
           </ul>
         </div>
-        <div>
-          <h3>
-            Dieta cetogénica (Recomendada para personas con obesidad, diabetes
-            tipo 2 o síndrome metabólico):
-          </h3>
-          <p>Características principales:</p>
-          <ul>
+        <div className="border-2 m-5 px-3 py-1 rounded-3xl">
+          <h3 className="text-center border-b m-auto w-2/4 font-bold">Dieta cetogénica (Recomendada para personas con obesidad, diabetes tipo 2 o síndrome metabólico):</h3>
+          <p className="font-semibold py-1">Características principales:</p>
+          <ul className="list-disc px-6 py-1">
             <li>
               Reducción de carbohidratos: Se restringe la ingesta de alimentos
               ricos en carbohidratos como pan, pasta, arroz, cereales, azúcares
@@ -103,6 +103,7 @@ function GymRoutine({ nPage, setNPage }) {
             </li>
           </ul>
         </div>
+        <img src="/dietImage.png" alt="diet image" className="h-100 w-160 absolute bottom-17 left-265 border-2 px-4 py-2 rounded-3xl"/>
       </div>
     </div>
   );
