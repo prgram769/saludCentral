@@ -1,9 +1,16 @@
+import { Button } from "./button";
+
 function GymRoutine({ nPage, setNPage }) {
+  function changeMain() {
+    if (nPage != 0) {
+      setNPage(0);
+    }
+  }
   return (
     <div className="min-h-screen light flex flex-col">
       <h1 className="text-center font-bold text-[40px]">EJERCICIO Y DIETAS</h1>
       <div>
-        <table className="m-auto px-2 py-1 mt-5 w-3/12 text-center">
+        <table className="m-auto px-2 py-1 mt-3 w-3/12 text-center">
           <caption className="border-b-2 border-t-2 mb-4 font-bold text-[22px]">
             Rutina de gym
           </caption>
@@ -47,9 +54,13 @@ function GymRoutine({ nPage, setNPage }) {
         </table>
       </div>
       <div className="w-250">
-        <h2 className="font-bold text-[22px] text-center border-b-2 border-t-2 m-auto mt-5 px-2 py-1 w-3/12">Dietas</h2>
-        <div className="border-2 m-5 px-3 rounded-3xl py-1">
-          <h3 className="text-center border-b m-auto w-3/12 font-bold">Dieta mediterránea</h3>
+        <h2 className="font-bold text-[22px] text-center border-b-2 border-t-2 m-auto mt-3 px-2 py-1 w-3/12">
+          Dietas
+        </h2>
+        <div className="border-2 m-3 px-3 rounded-3xl py-1">
+          <h3 className="text-center border-b m-auto w-3/12 font-bold">
+            Dieta mediterránea
+          </h3>
           <p className="font-semibold py-1">Características principales:</p>
           <ul className="list-disc px-6 py-1">
             <li>
@@ -82,8 +93,11 @@ function GymRoutine({ nPage, setNPage }) {
             </li>
           </ul>
         </div>
-        <div className="border-2 m-5 px-3 py-1 rounded-3xl">
-          <h3 className="text-center border-b m-auto w-2/4 font-bold">Dieta cetogénica (Recomendada para personas con obesidad, diabetes tipo 2 o síndrome metabólico):</h3>
+        <div className="border-2 m-3 px-3 py-1 rounded-3xl">
+          <h3 className="text-center border-b m-auto w-2/4 font-bold">
+            Dieta cetogénica (Recomendada para personas con obesidad, diabetes
+            tipo 2 o síndrome metabólico):
+          </h3>
           <p className="font-semibold py-1">Características principales:</p>
           <ul className="list-disc px-6 py-1">
             <li>
@@ -103,8 +117,13 @@ function GymRoutine({ nPage, setNPage }) {
             </li>
           </ul>
         </div>
-        <img src="/dietImage.png" alt="diet image" className="h-100 w-160 absolute bottom-17 left-265 border-2 px-4 py-2 rounded-3xl"/>
       </div>
+      <img
+        src="/dietImage.png"
+        alt="diet image"
+        className="h-100 w-160 absolute bottom-17 left-265 border-2 px-4 py-2 rounded-3xl"
+      />
+      <Button text={"Página principal"} className={"px-2 py-1 bg-amber-200 rounded m-auto font-bold w-1/12"} onClick={changeMain}/>
     </div>
   );
 }

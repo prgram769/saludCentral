@@ -2,16 +2,12 @@ import { Button } from "./button";
 
 function Alimentacion({nPage, setNPage}) {
 
-  let content;
-
   function changeMainPage() {
     // isAlimentation === 0 ? setAlimentation(1) : null; 
 
-    if (nPage == 0) {
-      setNPage(1);
-    } else {
+    if (nPage != 0) {
       setNPage(0);
-    }
+    } 
   }
 
   return (
