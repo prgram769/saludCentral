@@ -13,15 +13,15 @@ function Alimentacion({nPage, setNPage}) {
   return (
     <div className="min-h-screen light">
       {" "}
-      <h1 className="font-bold bg-green-500 text-black text-center">
+      <h1 className="font-bold bg-green-500 text-black text-center text-[40px]">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA
       </h1>
-      <div className="flex h-[91.5vh] justify-center items-center">
+      <div className="flex h-[87.7vh] justify-center items-center">
         <div className="border-2 border-orange-300 text-center w-90 text-[13px] m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Datos y cifras
           </h2>
-          <ul className="list-disc px-2 py-1 m-2">
+          <ul className="list-disc px-4 py-1 m-2">
             <li>
               Una dieta saludable ayuda a protegernos de la malnutrición en
               todas sus formas, así como de las enfermedades no transmisibles,
@@ -68,7 +68,7 @@ function Alimentacion({nPage, setNPage}) {
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Dieta sana para adultos
           </h2>
-          <ul className="list-disc px-2 py-1 m-2">
+          <ul className="list-disc px-4 py-1 m-2">
             <li>
               Frutas, verduras, legumbres (tales como lentejas y alubias),
               frutos secos y cereales integrales (por ejemplo, maíz, mijo,

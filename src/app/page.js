@@ -1,6 +1,7 @@
 "use client";
 
 import { Alimentacion } from "@/components/ui/alimentacion";
+import { CommonConditions } from "@/components/ui/commonConditions";
 import { Footer } from "@/components/ui/footer";
 import { GymRoutine } from "@/components/ui/gymRoutine";
 import { Header } from "@/components/ui/header";
@@ -30,6 +31,8 @@ export default function Home() {
     content = <Alimentacion nPage={nPage} setNPage={setNPage} />;
   } else if (nPage == 2) {
     content = <GymRoutine nPage={nPage} setNPage={setNPage} />;
+  } else if (nPage == 3) {
+    content = <CommonConditions nPage={nPage} setNPage={setNPage}/>
   }
   return (
     <>

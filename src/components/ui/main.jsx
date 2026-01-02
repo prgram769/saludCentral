@@ -11,6 +11,8 @@ function MainPage({nPage, setNPage}) {
       setNPage(1);
     } else if (event.target.getAttribute("class").includes("gymRoutineBtn" ) == true) {
       setNPage(2);
+    } else if (event.target.getAttribute("class").includes("commonConditionsBtn") == true) {
+      setNPage(3);
     }
   }
 
@@ -36,8 +38,9 @@ function MainPage({nPage, setNPage}) {
       </h1>
       <div>
         <Button
-          className={"btn gymRoutineBtn m-3 bg-[#878BCE] h-10 w-50 px-2 rounded-2xl"}
+          className={"btn commonConditionsBtn m-3 bg-[#878BCE] h-10 w-50 px-2 rounded-2xl"}
           text={"Condiciones comunes"}
+          onClick={changePage}
         />
         <Button
           className={"btn m-3 bg-[#878BCE] h-10 w-30 px-2 rounded-2xl"}
