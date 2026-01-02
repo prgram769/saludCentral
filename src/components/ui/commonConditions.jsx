@@ -9,11 +9,11 @@ function CommonConditions({ nPage, setNPage }) {
 
   return (
     <div className="min-h-screen light">
-      <h1 className="font-bold text-[40px] bg-blue-300 text-center">
+      <h1 className="font-bold text-[40px] bg-blue-500 text-center">
         CONDICIONES PSICOLÓGICAS MÁS COMUNES
       </h1>
       <div className="flex h-[90.1vh] justify-center items-center">
-        <div className="border-2 w-90 m-2 rounded-3xl">
+        <div className="border-2 w-90 m-2 rounded-3xl bg-blue-300">
           <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
             Condiciones más comunes:
           </h2>
@@ -75,16 +75,16 @@ function CommonConditions({ nPage, setNPage }) {
           </ul>
         </div>
         <img
-          className="border-2 h-140 w-165 px-4 py-2 m-2 rounded-3xl"
+          className="border-2 h-140 w-165 px-4 bg-blue-200 py-2 m-2 rounded-3xl"
           src="/imagenCondicionPsicologica.jpg"
           alt="Psycologycal image"
         />
-        <div className="border-2 m-2 w-130 rounded-3xl">
+        <div className="border-2 m-2 bg-blue-300 w-130 rounded-3xl">
           <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
             Comentario sobre las condiciones psicológicas
           </h2>
           <p className="px-6 py-1 m-2">
-            -Una de cada ocho personas en el mundo padece una condición mental.
+            Una de cada ocho personas en el mundo padece una condición mental.
             Las condicones mentales comportan alteraciones considerables del
             pensamiento, la regulación de las emociones o el comportamiento. Hay
             muchos tipos diferentes de condiciones mentales. Existen opciones
