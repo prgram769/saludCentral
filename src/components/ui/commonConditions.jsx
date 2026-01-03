@@ -8,11 +8,11 @@ function CommonConditions({ nPage, setNPage }) {
   }
 
   return (
-    <div className="min-h-screen light">
+    <main className="min-h-screen light">
       <h1 className="font-bold text-[40px] bg-blue-500 text-center">
         CONDICIONES PSICOLÓGICAS MÁS COMUNES
       </h1>
-      <div className="flex h-[90.1vh] justify-center items-center">
+      <section className="flex h-[88vh] justify-center items-center">
         <div className="border-2 w-90 m-2 rounded-3xl bg-blue-300">
           <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
             Condiciones más comunes:
@@ -75,7 +75,7 @@ function CommonConditions({ nPage, setNPage }) {
           </ul>
         </div>
         <img
-          className="border-2 h-140 w-165 px-4 bg-blue-200 py-2 m-2 rounded-3xl"
+          className="border-2 h-140 w-165 px-4 bg-blue-200 py-4 m-2 rounded-3xl"
           src="/imagenCondicionPsicologica.jpg"
           alt="Psycologycal image"
         />
@@ -100,15 +100,15 @@ function CommonConditions({ nPage, setNPage }) {
             funcional o riesgo de conducta autolesiva.
           </p>
         </div>
-      </div>
-      <div className="text-center">
+      </section>
+      <footer className="text-center">
         <Button
           text={"Página principal"}
-          className={"px-2 py-1 bg-blue-400 rounded m-auto font-bold w-1/12"}
+          className={"px-2 py-1 bg-blue-400 m-2 rounded font-bold w-1/12"}
           onClick={changeMain}
         />
-      </div>
-    </div>
+      </footer>
+    </main>
   );
 }
 

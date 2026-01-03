@@ -11,13 +11,13 @@ function Alimentacion({nPage, setNPage}) {
   }
 
   return (
-    <div className="min-h-screen light">
+    <main className="min-h-screen light">
       {" "}
       <h1 className="font-bold bg-green-500 text-black text-center text-[40px]">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA
       </h1>
-      <div className="flex h-[87.7vh] justify-center items-center">
-        <div className="border-2 border-orange-300 text-center w-90 text-[13px] m-2">
+      <section className="flex h-[87.2vh] justify-center items-center">
+        <div className="border-2 border-orange-300 text-center w-130 text-[13px] m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Datos y cifras
           </h2>
@@ -64,7 +64,7 @@ function Alimentacion({nPage, setNPage}) {
           className="px-2 py-1 m-3 border-2 border-orange-300 h-120 w-160"
           src="/platoOMSwikipedia.jpg"
         />
-        <div className="border-2 border-orange-300 text-center text-[13px] w-100 m-2">
+        <div className="border-2 border-orange-300 text-center text-[13px] w-130 m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Dieta sana para adultos
           </h2>
@@ -114,7 +114,7 @@ function Alimentacion({nPage, setNPage}) {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <footer className="bg-emerald-200 px-3 py-1 flex justify-center items-center">
         <p>
           <a
@@ -132,7 +132,7 @@ function Alimentacion({nPage, setNPage}) {
           onClick={changeMainPage}
         />
       </footer>
-    </div>
+    </main>
   );
 }
 

@@ -7,6 +7,7 @@ import { Footer } from "@/components/ui/footer";
 import { GymRoutine } from "@/components/ui/gymRoutine";
 import { Header } from "@/components/ui/header";
 import { MainPage } from "@/components/ui/main";
+import { SocialSupport } from "@/components/ui/socialSupport";
 import { createContext, useState } from "react";
 
 export default function Home() {
@@ -36,6 +37,8 @@ export default function Home() {
     content = <CommonConditions nPage={nPage} setNPage={setNPage}/>
   } else if (nPage == 4) {
     content = <Addictions nPage={nPage} setNPage={setNPage}/>
+  } else if (nPage == 5) {
+    content = <SocialSupport nPage={nPage} setNPage={setNPage}/>
   }
   return (
     <>
