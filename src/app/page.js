@@ -21,12 +21,12 @@ export default function Home() {
   if (nPage == 0) {
     content = (
       <>
-        <div className="mainDiv min-h-[95.6vh] items-center justify-center font-sans dark:bg-[#222]">
-          <div className="flex justify-center items-center bg-[#87AECE]">
+        <main className="mainDiv min-h-[95.6vh] items-center justify-center font-sans">
+          <section className="flex justify-center items-center bg-[#87AECE]">
             <Header />
-          </div>
+          </section>
           <MainPage nPage={nPage} setNPage={setNPage} />
-        </div>
+        </main>
         <Footer />
       </>
     );

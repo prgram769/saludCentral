@@ -9,13 +9,13 @@ function Header() {
 
   useEffect(() => {
     // if (localStorage.getItem("theme") === null) {
-      if (theme === "light") {
-        document.querySelector("div.mainDiv").classList.add("light");
+      if (theme == "light") {
+        document.querySelector("main.mainDiv").classList.add("light");
 
         localStorage.setItem("theme", theme);
       } else {
-        document.querySelector("div.mainDiv").classList.remove("light");
-        document.querySelector("div.mainDiv").classList.add("dark");
+        document.querySelector("main.mainDiv").classList.remove("light");
+        document.querySelector("main.mainDiv").classList.add("dark");
 
         localStorage.setItem("theme", theme);
       }
@@ -25,7 +25,7 @@ function Header() {
   }, [theme]);
 
   function changeTheme() {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
+    theme == "dark" ? setTheme("light") : setTheme("dark");
   }
 
   return (
