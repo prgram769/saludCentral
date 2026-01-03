@@ -3,10 +3,6 @@ const { Button } = require("./button");
 function MainPage({nPage, setNPage}) {
 
   function changePage() {
-    // !nPage ? setNPage(true) : null
-
-    console.log(event.target.getAttribute("class"));
-
     if (event.target.getAttribute("class").includes("alimentationBtn") == true) {
       setNPage(1);
     } else if (event.target.getAttribute("class").includes("gymRoutineBtn" ) == true) {

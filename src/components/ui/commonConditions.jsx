@@ -13,7 +13,7 @@ function CommonConditions({ nPage, setNPage }) {
         CONDICIONES PSICOLÓGICAS MÁS COMUNES
       </h1>
       <section className="flex h-[88vh] justify-center items-center">
-        <div className="border-2 w-90 m-2 rounded-3xl bg-blue-300">
+        <div className="border-2 w-90 m-2 rounded-3xl border-blue-700 bg-blue-300">
           <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
             Condiciones más comunes:
           </h2>
@@ -75,11 +75,11 @@ function CommonConditions({ nPage, setNPage }) {
           </ul>
         </div>
         <img
-          className="border-2 h-140 w-165 px-4 bg-blue-200 py-4 m-2 rounded-3xl"
+          className="border-2 h-140 w-165 px-4 bg-blue-200 py-4 m-2 border-blue-700 rounded-3xl"
           src="/imagenCondicionPsicologica.jpg"
           alt="Psycologycal image"
         />
-        <div className="border-2 m-2 bg-blue-300 w-130 rounded-3xl">
+        <div className="border-2 m-2 bg-blue-300 border-blue-700 w-130 rounded-3xl">
           <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
             Comentario sobre las condiciones psicológicas
           </h2>

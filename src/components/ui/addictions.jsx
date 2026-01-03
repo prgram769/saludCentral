@@ -13,7 +13,7 @@ function Addictions({ nPage, setNPage }) {
         ADICCIONES
       </h1>
       <section className="flex h-[88vh] justify-center items-center">
-        <div className="border-2 rounded-3xl px-4 py-1 m-2 w-70 bg-cyan-200">
+        <div className="border-2 rounded-3xl px-4 py-1 m-2 w-70 bg-cyan-200 border-blue-800">
           <h2 className="text-[20px] font-bold text-center">Definición</h2>
           <p>
             Las adicciones son trastornos neurológicos que generan una necesidad
@@ -26,9 +26,9 @@ function Addictions({ nPage, setNPage }) {
         <img
           src="/imagenAdicciones.jpg"
           alt="Addictions image"
-          className="w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100"
+          className="w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
         />
-        <div className="border-2 m-2 py-1 px-4 rounded-3xl bg-cyan-200 w-70">
+        <div className="border-2 m-2 py-1 px-4 rounded-3xl bg-cyan-200 border-blue-800 w-70">
           <h2 className="text-[20px] font-bold text-center">
             Adicciones más frecuentes
           </h2>

@@ -13,7 +13,7 @@ function SocialSupport({ nPage, setNPage }) {
         APOYO SOCIAL
       </h1>
       <section className="h-[88.1vh] flex justify-center items-center">
-        <div className="border-2 w-130 px-2 py-1 m-2 rounded-3xl bg-indigo-300">
+        <div className="border-2 w-130 px-2 py-1 m-2 rounded-3xl border-blue-600 bg-indigo-300">
           <h2 className="font-bold text-[20px] text-center">Definición</h2>
           <p>
             El apoyo social es una serie de recursos psicológicos (proveniente
@@ -28,9 +28,9 @@ function SocialSupport({ nPage, setNPage }) {
         <img
           src="/imagenApoyoSocial.jpg"
           alt="Social support image"
-          className="border-2 px-4 m-2 py-4 rounded-3xl bg-indigo-200"
+          className="border-2 px-4 m-2 py-4 rounded-3xl bg-indigo-200 border-blue-600"
         />
-        <div className="border-2 rounded-3xl bg-indigo-300 px-2 py-1 w-130 m-2">
+        <div className="border-2 rounded-3xl border-blue-600 bg-indigo-300 px-2 py-1 w-130 m-2">
           <h2 className="font-bold text-[20px] text-center">
             Beneficios para la salud
           </h2>
