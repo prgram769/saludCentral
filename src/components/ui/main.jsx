@@ -13,6 +13,8 @@ function MainPage({nPage, setNPage}) {
       setNPage(4);
     } else if (event.target.getAttribute("class").includes("socialSupportBtn") == true) {
       setNPage(5);
+    } else if (event.target.getAttribute("class").includes("interpersonalRelationshipsBtn") == true) {
+      setNPage(6);
     }
   }
 
@@ -58,8 +60,9 @@ function MainPage({nPage, setNPage}) {
           onClick={changePage}
         />
         <Button
-          className={"btn m-3 bg-[#878BCE] h-10 w-60 px-2 rounded-2xl"}
+          className={"btn interpersonalRelationshipsBtn m-3 bg-[#878BCE] h-10 w-60 px-2 rounded-2xl"}
           text={"Relaciones interpersonales"}
+          onClick={changePage}
         />
       </div>
     </main>

@@ -6,6 +6,7 @@ import { CommonConditions } from "@/components/ui/commonConditions";
 import { Footer } from "@/components/ui/footer";
 import { GymRoutine } from "@/components/ui/gymRoutine";
 import { Header } from "@/components/ui/header";
+import { InterpersonalRelationships } from "@/components/ui/interpersonalRelationships";
 import { MainPage } from "@/components/ui/main";
 import { SocialSupport } from "@/components/ui/socialSupport";
 import { createContext, useState } from "react";
@@ -39,6 +40,8 @@ export default function Home() {
     content = <Addictions nPage={nPage} setNPage={setNPage}/>
   } else if (nPage == 5) {
     content = <SocialSupport nPage={nPage} setNPage={setNPage}/>
+  } else if (nPage == 6) {
+    content = <InterpersonalRelationships nPage={nPage} setNPage={setNPage}/>
   }
   return (
     <>

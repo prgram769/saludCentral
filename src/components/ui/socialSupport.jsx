@@ -14,8 +14,8 @@ function SocialSupport({ nPage, setNPage }) {
       </h1>
       <section className="h-[88.1vh] flex justify-center items-center">
         <div className="border-2 w-130 px-2 py-1 m-2 rounded-3xl border-blue-600 bg-indigo-300">
-          <h2 className="font-bold text-[20px] text-center">Definición</h2>
-          <p>
+          <h2 className="font-bold text-[20px] text-center border-b w-3/12 m-auto">Definición</h2>
+          <p className="px-2 py-1 m-2">
             El apoyo social es una serie de recursos psicológicos (proveniente
             de otras personas) que son significativas para un individuo y que lo
             hacen sentirse estimado y valorado. Están compuestas por
@@ -31,10 +31,10 @@ function SocialSupport({ nPage, setNPage }) {
           className="border-2 px-4 m-2 py-4 rounded-3xl bg-indigo-200 border-blue-600"
         />
         <div className="border-2 rounded-3xl border-blue-600 bg-indigo-300 px-2 py-1 w-130 m-2">
-          <h2 className="font-bold text-[20px] text-center">
+          <h2 className="font-bold text-[20px] text-center border-b w-6/12 m-auto">
             Beneficios para la salud
           </h2>
-          <p>
+          <p className="px-2 py-1 m-2">
             Se sostiene que el apoyo social produce ciertos efectos positivos en
             la salud, principalmente en el estrés, donde es capaz de proteger a
             un individuo de los factores patógenos que pueden producir los

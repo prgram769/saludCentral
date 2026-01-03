@@ -13,9 +13,9 @@ function Addictions({ nPage, setNPage }) {
         ADICCIONES
       </h1>
       <section className="flex h-[88vh] justify-center items-center">
-        <div className="border-2 rounded-3xl px-4 py-1 m-2 w-70 bg-cyan-200 border-blue-800">
-          <h2 className="text-[20px] font-bold text-center">Definición</h2>
-          <p>
+        <div className="border-2 rounded-3xl px-2 py-1 m-2 w-70 bg-cyan-200 border-blue-800">
+          <h2 className="text-[20px] font-bold text-center border-b w-6/12 m-auto">Definición</h2>
+          <p className="px-2 py-1 m-2">
             Las adicciones son trastornos neurológicos que generan una necesidad
             compulsiva de consumir una sustancia o realizar una actividad para
             obtener un alivio. Esto afecta el control sobre los impulsos,
@@ -28,11 +28,11 @@ function Addictions({ nPage, setNPage }) {
           alt="Addictions image"
           className="w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
         />
-        <div className="border-2 m-2 py-1 px-4 rounded-3xl bg-cyan-200 border-blue-800 w-70">
-          <h2 className="text-[20px] font-bold text-center">
+        <div className="border-2 m-2 rounded-3xl px-2 py-1 bg-cyan-200 border-blue-800 w-80">
+          <h2 className="text-[20px] font-bold text-center border-b w-7/12 m-auto">
             Adicciones más frecuentes
           </h2>
-          <ul className="list-disc px-4">
+          <ul className="list-disc px-8 py-1">
             <li>
               <a
                 href="https://es.wikipedia.org/wiki/Alcoholismo"

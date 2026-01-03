@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <>
-      <h1 className="h1 m-5 text-black text-[20px] font-bold">
+      <h1 className="h1 m-5 text-black text-[40px] font-bold">
         WEB DONDE SE PUBLICAN ARTÍCULOS RELACIONADOS CON LA SALUD
       </h1>
       {theme === "dark" ? (
