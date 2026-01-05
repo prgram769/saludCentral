@@ -9,7 +9,8 @@ import { Header } from "@/components/ui/header";
 import { InterpersonalRelationships } from "@/components/ui/interpersonalRelationships";
 import { MainPage } from "@/components/ui/main";
 import { SocialSupport } from "@/components/ui/socialSupport";
-import { createContext, useState } from "react";
+import { useTheme } from "next-themes";
+import { useState } from "react";
 
 export default function Home() {
   // const ThemeContext = createContext("light");
@@ -17,13 +18,14 @@ export default function Home() {
   let content;
 
   const [nPage, setNPage] = useState(0);
+  const {theme, setTheme} = useTheme();
 
   if (nPage == 0) {
     content = (
       <>
         <main className="mainDiv min-h-[95.6vh] items-center justify-center font-sans">
           <section className="flex justify-center items-center bg-[#87AECE]">
-            <Header />
+            <Header isDark={theme} setDark={setTheme}/>
           </section>
           <MainPage nPage={nPage} setNPage={setNPage} />
         </main>

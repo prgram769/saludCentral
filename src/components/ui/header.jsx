@@ -1,41 +1,23 @@
-// import { ThemeProvider } from "./themeProvider";
+"use client";
 
-const { useState, useEffect, useContext } = require("react");
+const { useState } = require("react");
 const { Button } = require("./button");
 
-function Header() {
-  // const {theme, setTheme} = useContext(ThemeProvider);
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    // if (localStorage.getItem("theme") === null) {
-      if (theme == "light") {
-        document.querySelector("main.mainDiv").classList.add("light");
-
-        localStorage.setItem("theme", theme);
-      } else {
-        document.querySelector("main.mainDiv").classList.remove("light");
-        document.querySelector("main.mainDiv").classList.add("dark");
-
-        localStorage.setItem("theme", theme);
-      }
-    // } else {
-    //   document.querySelector("div.mainDiv").classList.add(localStorage.getItem("theme"));
-    // }
-  }, [theme]);
-
-  function changeTheme() {
-    theme == "dark" ? setTheme("light") : setTheme("dark");
-  }
+function Header({ theme, setTheme }) {
+  // function changeTheme() {
+  //   setDark(!isDark);
+  //
+  //   console.log("prueba");
+  // }
 
   return (
     <>
       <h1 className="h1 m-5 text-black text-[40px] font-bold">
         WEB DONDE SE PUBLICAN ARTÍCULOS RELACIONADOS CON LA SALUD
       </h1>
-      {theme === "dark" ? (
+      {theme == "light" ? (
         <Button
-          onClick={changeTheme}
+          onClick={() => setTheme("light")}
           className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
           text={
             <svg
@@ -52,7 +34,7 @@ function Header() {
         />
       ) : (
         <Button
-          onClick={changeTheme}
+          onClick={() => setTheme("dark")}
           className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
           text={
             <svg
