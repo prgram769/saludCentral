@@ -13,8 +13,6 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 
 export default function Home() {
-  // const ThemeContext = createContext("light");
-
   let content;
 
   const [nPage, setNPage] = useState(0);
@@ -23,9 +21,9 @@ export default function Home() {
   if (nPage == 0) {
     content = (
       <>
-        <main className="mainDiv min-h-[95.6vh] items-center justify-center font-sans">
+        <main className="mainDiv min-h-[95.6vh] items-center justify-center bg-transparent font-sans">
           <section className="flex justify-center items-center bg-[#87AECE]">
-            <Header isDark={theme} setDark={setTheme}/>
+            <Header theme={theme} setTheme={setTheme}/>
           </section>
           <MainPage nPage={nPage} setNPage={setNPage} />
         </main>

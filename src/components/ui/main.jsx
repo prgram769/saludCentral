@@ -1,3 +1,5 @@
+"use client";
+
 const { Button } = require("./button");
 
 function MainPage({nPage, setNPage}) {

@@ -26,16 +26,6 @@ body {
   color: black;
 }
 
-/* .dark { */
-/*   background-color: #222; */
-/*   color: white; */
-/* } */
-/**/
-/* .light { */
-/*   background-color: white; */
-/*   color: black; */
-/* } */
-
 [data-theme="dark"] {
   background-color: #222;
 }
