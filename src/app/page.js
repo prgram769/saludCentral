@@ -19,12 +19,12 @@ export default function Home() {
   if (nPage == 0) {
     content = (
       <>
-        {/* <main className="mainDiv items-center justify-center font-sans"> */}
+        <main className="mainDiv min-h-[95.6vh] items-center justify-center font-sans">
           <section className="flex justify-center items-center bg-[#87AECE]">
             <Header/>
           </section>
           <MainPage nPage={nPage} setNPage={setNPage} />
-        {/* </main> */}
+        </main>
         <Footer />
       </>
     );

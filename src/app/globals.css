@@ -26,10 +26,11 @@ body {
   color: black;
 }
 
-.dark {
+
+html.dark body {
   background-color: #222;
 }
 
-.light {
+html.light body{
   background-color: white;
 }
