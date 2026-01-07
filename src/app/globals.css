@@ -26,10 +26,10 @@ body {
   color: black;
 }
 
-[data-theme="dark"] {
+.dark {
   background-color: #222;
 }
 
-[data-theme="light"] {
+.light {
   background-color: white;
 }

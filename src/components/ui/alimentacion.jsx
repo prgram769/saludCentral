@@ -9,7 +9,7 @@ function Alimentacion({nPage, setNPage}) {
   }
 
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       {" "}
       <h1 className="font-bold bg-green-500 text-black text-center text-[40px]">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA

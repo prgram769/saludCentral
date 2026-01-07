@@ -8,7 +8,7 @@ function SocialSupport({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       <h1 className="text-[40px] font-bold bg-indigo-300 text-center">
         APOYO SOCIAL
       </h1>

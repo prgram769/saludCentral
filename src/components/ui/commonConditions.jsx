@@ -8,7 +8,7 @@ function CommonConditions({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       <h1 className="font-bold text-[40px] bg-blue-500 text-center">
         CONDICIONES PSICOLÓGICAS MÁS COMUNES
       </h1>

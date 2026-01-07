@@ -8,7 +8,7 @@ function InterpersonalRelationships({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       <h1 className="bg-purple-400 text-[40px] font-bold text-center">
         RELACIONES INTERPERSONALES
       </h1>

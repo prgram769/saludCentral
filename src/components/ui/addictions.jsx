@@ -8,7 +8,7 @@ function Addictions({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       <h1 className="text-[40px] bg-cyan-500 font-bold text-center">
         ADICCIONES
       </h1>

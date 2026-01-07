@@ -1,19 +1,30 @@
 "use client";
 
-const { Button } = require("./button");
 import { useTheme } from "next-themes";
 
-function Header({ theme, setTheme }) {
+const { Button } = require("./button");
+
+function Header() {
+  const {theme, setTheme} = useTheme();
+  
+  const handleClick = () => { 
+    if (theme == "light") {
+      setTheme("dark");
+    } else if (theme == "dark") {
+      setTheme("light");
+    }
+  }
   return (
     <>
       <h1 className="h1 m-5 text-black text-[40px] font-bold">
         WEB DONDE SE PUBLICAN ARTÍCULOS RELACIONADOS CON LA SALUD
       </h1>
-      {theme == "dark" ? (
-        <Button
-          onClick={() => setTheme("light")}
-          className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
-          text={
+
+      <Button
+        onClick={handleClick}
+        className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
+        text={
+          theme == "dark" ? (
             <svg
               className="h-14 w-14"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,15 +34,12 @@ function Header({ theme, setTheme }) {
               fill="#1f1f1f"
               suppressHydrationWarning
             >
-              <path suppressHydrationWarning d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
+              <path
+                suppressHydrationWarning
+                d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"
+              />
             </svg>
-          }
-        />
-      ) : (
-        <Button
-          onClick={() => setTheme("dark")}
-          className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
-          text={
+          ) : (
             <svg
               className="h-14 w-14"
               xmlns="http://www.w3.org/2000/svg"
@@ -41,11 +49,14 @@ function Header({ theme, setTheme }) {
               fill="#1f1f1f"
               suppressHydrationWarning
             >
-              <path suppressHydrationWarning d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0-200Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
+              <path
+                suppressHydrationWarning
+                d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0-200Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"
+              />
             </svg>
-          }
-        />
-      )}
+          )
+        }
+      />
     </>
   );
 }

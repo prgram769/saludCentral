@@ -7,12 +7,8 @@ function GymRoutine({ nPage, setNPage }) {
     }
   }
 
-  if (localStorage.getItem("theme") == "dark") {
-    document.querySelector("main").setAttribute("class", "bg-[#222]")
-  }
-
   return (
-    <main className="min-h-screen light">
+    <main className="min-h-screen">
       <h1 className="text-center font-bold text-[40px] bg-rose-700">
         EJERCICIO Y DIETAS
       </h1>
