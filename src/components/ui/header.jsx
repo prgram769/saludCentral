@@ -22,7 +22,7 @@ function Header() {
 
       <Button
         onClick={handleClick}
-        className={"btn bg-[#878BCE] h-14 w-14 rounded-2xl"}
+        className={"themeBtn bg-[#878BCE] h-14 w-14 rounded-2xl"}
         text={
           theme == "dark" ? (
             <svg

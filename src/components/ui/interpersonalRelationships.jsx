@@ -49,8 +49,8 @@ function InterpersonalRelationships({ nPage, setNPage }) {
       </section>
       <footer>
         <div className="flex justify-center items-center bg-purple-200">
-          <p className="bg-purple-300 rounded font-bold px-2 py-1"><a href="https://es.wikipedia.org/wiki/Relaci%C3%B3n_interpersonal" target="_blank" rel="noopener">Página web de la información (wikipedia)</a></p>
-          <Button text={"Página principal"} onClick={changeMain} className={"bg-purple-300 rounded w-1/12 px-2 py-1 m-2 font-bold"}/>
+          <p className="btn bg-purple-300 rounded font-bold px-2 py-1"><a href="https://es.wikipedia.org/wiki/Relaci%C3%B3n_interpersonal" target="_blank" rel="noopener">Página web de la información (wikipedia)</a></p>
+          <Button text={"Página principal"} onClick={changeMain} className={"btn bg-purple-300 rounded w-1/12 px-2 py-1 m-2 font-bold"}/>
         </div>
       </footer>
     </main>

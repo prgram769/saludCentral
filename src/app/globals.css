@@ -26,11 +26,27 @@ body {
   color: black;
 }
 
-
 html.dark body {
   background-color: #222;
 }
 
 html.light body{
   background-color: white;
+}
+
+.btn:hover {
+  scale: 1.25;
+  margin-left: 25px;
+  margin-right: 25px;
+  animation: pulse 1s infinite;
+}
+
+.themeBtn:hover {
+  animation: pulse 1s infinite;
+}
+
+@media screen and (max-width: 500px) {
+  /* .mainDiv { */
+  /*   width: 75%; */
+  /* } */
 }

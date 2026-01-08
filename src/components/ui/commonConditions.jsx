@@ -104,7 +104,7 @@ function CommonConditions({ nPage, setNPage }) {
       <footer className="text-center">
         <Button
           text={"Página principal"}
-          className={"px-2 py-1 bg-blue-400 m-2 rounded font-bold w-1/12"}
+          className={"btn px-2 py-1 bg-blue-400 m-2 rounded font-bold w-1/12"}
           onClick={changeMain}
         />
       </footer>

@@ -93,7 +93,7 @@ function Addictions({ nPage, setNPage }) {
       <footer className="text-center">
         <Button
           text={"Página principal"}
-          className={"bg-cyan-300 rounded px-2 py-1 font-bold m-2 w-1/12"}
+          className={"btn bg-cyan-300 rounded px-2 py-1 font-bold m-2 w-1/12"}
           onClick={changeMain}
         />
       </footer>

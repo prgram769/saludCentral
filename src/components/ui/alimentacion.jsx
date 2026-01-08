@@ -1,11 +1,10 @@
 import { Button } from "./button";
 
-function Alimentacion({nPage, setNPage}) {
-
+function Alimentacion({ nPage, setNPage }) {
   function changeMainPage() {
     if (nPage != 0) {
       setNPage(0);
-    } 
+    }
   }
 
   return (
@@ -114,9 +113,8 @@ function Alimentacion({nPage, setNPage}) {
         </div>
       </section>
       <footer className="bg-emerald-200 px-3 py-1 flex justify-center items-center">
-        <p>
+        <p className="btn bg-emerald-100 font-bold rounded px-2 py-2 m-2">
           <a
-            className="bg-emerald-100 font-bold rounded px-2 py-2 m-2"
             href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
             target="_blank"
             rel="noopener noreferrer"
@@ -126,7 +124,9 @@ function Alimentacion({nPage, setNPage}) {
         </p>
         <Button
           text={"Página principal"}
-          className={"bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"}
+          className={
+            "btn bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"
+          }
           onClick={changeMainPage}
         />
       </footer>

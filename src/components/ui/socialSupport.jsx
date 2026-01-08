@@ -50,7 +50,7 @@ function SocialSupport({ nPage, setNPage }) {
       </section>
       <footer>
         <div className="flex justify-center items-center bg-indigo-300">
-          <p className="bg-indigo-400 px-2 py-1 rounded font-bold m-2">
+          <p className="btn bg-indigo-400 px-2 py-1 rounded font-bold m-2">
             <a
               href="https://es.wikipedia.org/wiki/Apoyo_social"
               target="_blank"
@@ -61,7 +61,7 @@ function SocialSupport({ nPage, setNPage }) {
           </p>
           <Button
             text={"Página principal"}
-            className={"bg-indigo-400 rounded w-1/12 px-2 py-1 m-2 font-bold"}
+            className={"btn bg-indigo-400 rounded w-1/12 px-2 py-1 m-2 font-bold"}
             onClick={changeMain}
           />
         </div>
