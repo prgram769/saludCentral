@@ -19,13 +19,15 @@ export default function Home() {
   if (nPage == 0) {
     content = (
       <>
-        <main className="mainDiv min-h-[95.6vh] items-center justify-center font-sans">
-          <section className="flex justify-center items-center bg-[#87AECE]">
-            <Header/>
+        <main className="mainDiv flex flex-col flex-1 font-sans">
+          <section className="headerSection flex justify-center items-center bg-[#87AECE]">
+            <Header />
           </section>
-          <MainPage nPage={nPage} setNPage={setNPage} />
+          <div className="flex-1 justify-center items-center">
+            <MainPage nPage={nPage} setNPage={setNPage} />
+          </div>
+          <Footer />
         </main>
-        <Footer />
       </>
     );
   } else if (nPage == 1) {
@@ -33,17 +35,13 @@ export default function Home() {
   } else if (nPage == 2) {
     content = <GymRoutine nPage={nPage} setNPage={setNPage} />;
   } else if (nPage == 3) {
-    content = <CommonConditions nPage={nPage} setNPage={setNPage}/>
+    content = <CommonConditions nPage={nPage} setNPage={setNPage} />;
   } else if (nPage == 4) {
-    content = <Addictions nPage={nPage} setNPage={setNPage}/>
+    content = <Addictions nPage={nPage} setNPage={setNPage} />;
   } else if (nPage == 5) {
-    content = <SocialSupport nPage={nPage} setNPage={setNPage}/>
+    content = <SocialSupport nPage={nPage} setNPage={setNPage} />;
   } else if (nPage == 6) {
-    content = <InterpersonalRelationships nPage={nPage} setNPage={setNPage}/>
+    content = <InterpersonalRelationships nPage={nPage} setNPage={setNPage} />;
   }
-  return (
-    <>
-      {content}
-    </>
-  );
+  return <>{content}</>;
 }

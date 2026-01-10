@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${ubuntu.className} antialiased`}
+        className={`min-h-screen flex flex-col ${ubuntu.className} antialiased`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="light" themes={["light", "dark"]}>
           {children}
