@@ -45,12 +45,12 @@ html.light body{
   animation: pulse 1s infinite;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .btn {
     width: 50%;
     font-size: 0.8rem;
   }
-
+  
   .h {
     width: 50%;
     font-size: 1rem;
@@ -64,8 +64,8 @@ html.light body{
 
   .h1 {
     width: 100%;
-    font-size: 2rem;
-    height: 50%;
+    font-size: 1.5rem;
+    height: 25%;
   }
 
   .themeBtn {
@@ -76,5 +76,29 @@ html.light body{
 
   .footer {
     font-size: 0.8rem;
+  }
+
+  .alimentationMain {
+    display: grid;
+  }
+
+  .alimentationImg {
+    width: 25%;
+    height: 25%;
+  }
+
+  .alimentationText1 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .alimentationText2 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .alimentationTitle {
+    height: 25%;
+    font-size: 2rem;
   }
 }

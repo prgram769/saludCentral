@@ -8,13 +8,13 @@ function Alimentacion({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="alimentationMain">
       {" "}
-      <h1 className="font-bold bg-green-500 text-black text-center text-[40px]">
+      <h1 className="alimentationTitle font-bold bg-green-500 text-black text-center text-[40px]">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA
       </h1>
       <section className="flex h-[87.2vh] justify-center items-center">
-        <div className="border-2 border-orange-300 bg-lime-100 rounded-3xl text-center w-130 text-[13px] m-2">
+        <div className="alimentationText1 border-2 border-orange-300 bg-lime-100 rounded-3xl text-center w-130 text-[13px] m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Datos y cifras
           </h2>
@@ -58,10 +58,10 @@ function Alimentacion({ nPage, setNPage }) {
           </ul>
         </div>
         <img
-          className="px-4 py-4 m-3 border-2 bg-lime-100 rounded-3xl border-orange-300 h-120 w-160"
+          className="alimentationImg px-4 py-4 m-3 border-2 bg-lime-100 rounded-3xl border-orange-300 h-120 w-160"
           src="/platoOMSwikipedia.jpg"
         />
-        <div className="border-2 bg-lime-100 rounded-3xl border-orange-300 text-center text-[13px] w-130 m-2">
+        <div className="alimentationText2 border-2 bg-lime-100 rounded-3xl border-orange-300 text-center text-[13px] w-130 m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Dieta sana para adultos
           </h2>
@@ -112,7 +112,7 @@ function Alimentacion({ nPage, setNPage }) {
           </ul>
         </div>
       </section>
-      <footer className="bg-emerald-200 px-3 py-1 flex justify-center items-center">
+      <footer className="bg-emerald-200 px-3 flex justify-center items-center">
         <p className="btn bg-emerald-100 font-bold rounded px-2 py-2 m-2">
           <a
             href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
