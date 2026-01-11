@@ -35,7 +35,7 @@ html.light body{
 }
 
 .btn:hover {
-  scale: 1.25;
+  scale: 1.1;
   margin-left: 25px;
   margin-right: 25px;
   animation: pulse 1s infinite;
@@ -78,23 +78,21 @@ html.light body{
     font-size: 0.8rem;
   }
 
-  .alimentationMain {
-    display: grid;
+  .alimentationSection {
+    flex-direction: column;
   }
 
   .alimentationImg {
-    width: 25%;
-    height: 25%;
+    height: 95%;
+    width: 95%;
   }
 
   .alimentationText1 {
-    height: 50%;
-    width: 50%;
+    width: 95%;
   }
 
   .alimentationText2 {
-    height: 50%;
-    width: 50%;
+    width: 95%;
   }
 
   .alimentationTitle {

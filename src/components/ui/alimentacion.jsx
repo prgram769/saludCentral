@@ -8,12 +8,12 @@ function Alimentacion({ nPage, setNPage }) {
   }
 
   return (
-    <main className="alimentationMain">
+    <main className="alimentationMain flex flex-1 flex-col">
       {" "}
       <h1 className="alimentationTitle font-bold bg-green-500 text-black text-center text-[40px]">
         INVESTIGACIÓN Y COMUNICADO DE LA OMS SOBRE LA ALIMENTACIÓN SANA
       </h1>
-      <section className="flex h-[87.2vh] justify-center items-center">
+      <section className="alimentationSection flex flex-1 justify-center items-center">
         <div className="alimentationText1 border-2 border-orange-300 bg-lime-100 rounded-3xl text-center w-130 text-[13px] m-2">
           <h2 className="rounded px-2 py-1 text-center bg-[#AFD06E] text-black font-bold m-7">
             Datos y cifras
@@ -113,7 +113,7 @@ function Alimentacion({ nPage, setNPage }) {
         </div>
       </section>
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
-        <p className="btn bg-emerald-100 font-bold rounded px-2 py-2 m-2">
+        <p className="btn bg-emerald-100 font-bold rounded px-2 py-1 m-2">
           <a
             href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
             target="_blank"
