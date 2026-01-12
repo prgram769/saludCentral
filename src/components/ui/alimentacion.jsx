@@ -113,7 +113,7 @@ function Alimentacion({ nPage, setNPage }) {
         </div>
       </section>
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
-        <p className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2">
+        <p className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5">
           <a
             href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
             target="_blank"

@@ -36,8 +36,8 @@ html.light body{
 
 .btn:hover {
   scale: 1.1;
-  margin-left: 25px;
-  margin-right: 25px;
+  /* margin-left: 25px; */
+  /* margin-right: 25px; */
   animation: pulse 1s infinite;
 }
 
@@ -98,5 +98,37 @@ html.light body{
   .alimentationTitle {
     height: 25%;
     font-size: 2rem;
+  }
+
+  .gymRoutineDiv {
+    width: 90%;
+    height: 55%;
+  }
+
+  .dietsDiv {
+    width: 90%;
+  }
+
+  .dietImage {
+    width: 75%;
+    height: 75%;
+  }
+
+  .dietSection {
+    flex-direction: column;
+  }
+
+  .dietSectionDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ketogenicDietTitle {
+    width: 10rem;
+  }
+
+  .mediterraneanDietTitle {
+    width: 9rem;
   }
 }
