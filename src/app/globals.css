@@ -30,7 +30,7 @@ html.dark body {
   background-color: #222;
 }
 
-html.light body{
+html.light body {
   background-color: white;
 }
 
@@ -50,7 +50,7 @@ html.light body{
     width: 50%;
     font-size: 0.8rem;
   }
-  
+
   .h {
     width: 50%;
     font-size: 1rem;
@@ -96,8 +96,8 @@ html.light body{
   }
 
   .alimentationTitle {
-    height: 25%;
-    font-size: 2rem;
+    height: 15%;
+    font-size: 1.5rem;
   }
 
   .gymRoutineDiv {
@@ -130,5 +130,31 @@ html.light body{
 
   .mediterraneanDietTitle {
     width: 9rem;
+  }
+
+  .commonConditionsSection {
+    flex-direction: column;
+  }
+
+  .commonConditionsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .commonConditionsImage {
+    height: 95%;
+    width: 95%;
+  }
+
+  .commonConditionsConclusion {
+    width: 95%;
+  }
+
+  .commonConditionsList {
+    width: 95%;
+  }
+
+  .commonConditionsConclusionTitle {
+    width: 75%;
   }
 }
