@@ -10,7 +10,7 @@ function SocialSupport({ nPage, setNPage }) {
   return (
     <>
       {" "}
-      <main className="min-h-screen flex flex-1 flex-col">
+      <main className="flex flex-1 flex-col">
         <h1 className="socialSupportTitle text-[40px] font-bold bg-indigo-300 text-center">
           APOYO SOCIAL
         </h1>

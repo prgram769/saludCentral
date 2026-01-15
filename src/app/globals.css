@@ -231,4 +231,36 @@ html.light body {
   .socialSupportText2Title {
     width: 75%;
   }
+
+  /*Interpersonal relations*/
+
+  .interpersonalRelationsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .interpersonalRelationsSection {
+    flex-direction: column;
+  }
+
+  .interpersonalRelationsText1 {
+    width: 95%;
+  }
+
+  .interpersonalRelationsText1Title {
+    width: 75%;
+  }
+
+  .interpersonalRelationsText2 {
+    width: 95%;
+  }
+
+  .interpersonalRelationsText2Title {
+    width: 65%;
+  }
+
+  .interpersonalRelationsImage {
+    width: 95%;
+    height: 95%;
+  }
 }

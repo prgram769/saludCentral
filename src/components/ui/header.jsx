@@ -16,8 +16,8 @@ function Header() {
   }
   return (
     <>
-      <h1 className="h1 m-5 text-black text-[40px] font-bold">
-        WEB DONDE SE PUBLICAN ARTÍCULOS RELACIONADOS CON LA SALUD
+      <h1 className="text-center h1 m-5 text-black text-[40px] font-bold">
+        BLOG SALUD Y SALUD MENTAL
       </h1>
 
       <Button

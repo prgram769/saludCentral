@@ -8,7 +8,7 @@ function Addictions({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen flex flex-1 flex-col">
+    <main className="flex flex-1 flex-col">
       <h1 className="addictionsTitle text-[40px] bg-cyan-500 font-bold text-center">
         ADICCIONES
       </h1>
