@@ -11,7 +11,7 @@ function GymRoutine({ nPage, setNPage }) {
     <>
       {" "}
       <main className="flex flex-col flex-1">
-        <h1 className="text-center font-bold text-[40px] bg-rose-700">
+        <h1 className="gymRoutineTitle text-center font-bold text-[40px] bg-rose-700">
           EJERCICIO Y DIETAS
         </h1>
         <section>

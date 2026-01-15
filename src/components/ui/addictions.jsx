@@ -8,12 +8,12 @@ function Addictions({ nPage, setNPage }) {
   }
 
   return (
-    <main className="min-h-screen">
-      <h1 className="text-[40px] bg-cyan-500 font-bold text-center">
+    <main className="min-h-screen flex flex-1 flex-col">
+      <h1 className="addictionsTitle text-[40px] bg-cyan-500 font-bold text-center">
         ADICCIONES
       </h1>
-      <section className="flex h-[88vh] justify-center items-center">
-        <div className="border-2 rounded-3xl px-2 py-1 m-2 w-70 bg-cyan-200 border-blue-800">
+      <section className="addictionsSection flex flex-1 justify-center items-center">
+        <div className="addictionsText1 border-2 rounded-3xl px-2 py-1 m-2 w-70 bg-cyan-200 border-blue-800">
           <h2 className="text-[20px] font-bold text-center border-b w-6/12 m-auto">Definición</h2>
           <p className="px-2 py-1 m-2">
             Las adicciones son trastornos neurológicos que generan una necesidad
@@ -26,10 +26,10 @@ function Addictions({ nPage, setNPage }) {
         <img
           src="/imagenAdicciones.jpg"
           alt="Addictions image"
-          className="w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
+          className="addictionsImage w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
         />
-        <div className="border-2 m-2 rounded-3xl px-2 py-1 bg-cyan-200 border-blue-800 w-80">
-          <h2 className="text-[20px] font-bold text-center border-b w-7/12 m-auto">
+        <div className="addictionsText2 border-2 m-2 rounded-3xl px-2 py-1 bg-cyan-200 border-blue-800 w-80">
+          <h2 className="addictionsText2Title text-[20px] font-bold text-center border-b w-7/12 m-auto">
             Adicciones más frecuentes
           </h2>
           <ul className="list-disc px-8 py-1">

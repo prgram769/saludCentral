@@ -46,6 +46,9 @@ html.light body {
 }
 
 @media screen and (max-width: 1100px) {
+  
+  /*Main and buttons*/
+
   .btn {
     width: 50%;
     font-size: 0.8rem;
@@ -78,6 +81,8 @@ html.light body {
     font-size: 0.8rem;
   }
 
+  /*Alimentation component*/
+
   .alimentationSection {
     flex-direction: column;
   }
@@ -96,6 +101,13 @@ html.light body {
   }
 
   .alimentationTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  /*Gym routine component*/
+
+  .gymRoutineTitle {
     height: 15%;
     font-size: 1.5rem;
   }
@@ -132,6 +144,8 @@ html.light body {
     width: 9rem;
   }
 
+  /*Common conditions component*/
+
   .commonConditionsSection {
     flex-direction: column;
   }
@@ -155,6 +169,66 @@ html.light body {
   }
 
   .commonConditionsConclusionTitle {
+    width: 75%;
+  }
+
+  /*Addictions component*/
+
+  .addictionsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .addictionsSection {
+    flex-direction: column;
+  }
+
+  .addictionsText1 {
+    width: 95%;
+  }
+
+  .addictionsImage {
+    width: 90%;
+    height: 90%;
+  }
+
+  .addictionsText2 {
+    width: 95%;
+  }
+
+  .addictionsText2Title {
+    width: 80%;
+  }
+
+  /*Social support component*/
+
+  .socialSupportTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .socialSupportSection {
+    flex-direction: column;
+  }
+
+  .socialSupportText1 {
+    width: 95%;
+  }
+
+  .socialSupportText1Title {
+    width: 50%;
+  }
+
+  .socialSupportImage {
+    width: 95%;
+    height: 95%;
+  }
+
+  .socialSupportText2 {
+    width: 95%;
+  }
+
+  .socialSupportText2Title {
     width: 75%;
   }
 }
