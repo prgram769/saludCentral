@@ -45,8 +45,7 @@ html.light body {
   animation: pulse 1s infinite;
 }
 
-@media screen and (max-width: 1100px) {
-  
+@media screen and (max-width: 550px) {
   /*Main and buttons*/
 
   .btn {
@@ -232,7 +231,226 @@ html.light body {
     width: 75%;
   }
 
-  /*Interpersonal relations*/
+  /*Interpersonal relations component*/
+
+  .interpersonalRelationsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .interpersonalRelationsSection {
+    flex-direction: column;
+  }
+
+  .interpersonalRelationsText1 {
+    width: 95%;
+  }
+
+  .interpersonalRelationsText1Title {
+    width: 75%;
+  }
+
+  .interpersonalRelationsText2 {
+    width: 95%;
+  }
+
+  .interpersonalRelationsText2Title {
+    width: 65%;
+  }
+
+  .interpersonalRelationsImage {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /*Main and buttons*/
+
+  .btn {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+
+  .h {
+    width: 50%;
+    font-size: 1rem;
+    height: 50%;
+  }
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 25%;
+  }
+
+  .themeBtn {
+    width: 4rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  /*Alimentation component*/
+
+  .alimentationSection {
+    flex-direction: column;
+  }
+
+  .alimentationImg {
+    height: 95%;
+    width: 95%;
+  }
+
+  .alimentationText1 {
+    width: 95%;
+  }
+
+  .alimentationText2 {
+    width: 95%;
+  }
+
+  .alimentationTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  /*Gym routine component*/
+
+  .gymRoutineTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .gymRoutineDiv {
+    width: 90%;
+    height: 55%;
+  }
+
+  .dietsDiv {
+    width: 90%;
+  }
+
+  .dietImage {
+    width: 75%;
+    height: 75%;
+  }
+
+  .dietSection {
+    flex-direction: column;
+  }
+
+  .dietSectionDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ketogenicDietTitle {
+    width: 10rem;
+  }
+
+  .mediterraneanDietTitle {
+    width: 9rem;
+  }
+
+  /*Common conditions component*/
+
+  .commonConditionsSection {
+    flex-direction: column;
+  }
+
+  .commonConditionsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .commonConditionsImage {
+    height: 95%;
+    width: 95%;
+  }
+
+  .commonConditionsConclusion {
+    width: 95%;
+  }
+
+  .commonConditionsList {
+    width: 95%;
+  }
+
+  .commonConditionsConclusionTitle {
+    width: 75%;
+  }
+
+  /*Addictions component*/
+
+  .addictionsTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .addictionsSection {
+    flex-direction: column;
+  }
+
+  .addictionsText1 {
+    width: 95%;
+  }
+
+  .addictionsImage {
+    width: 90%;
+    height: 90%;
+  }
+
+  .addictionsText2 {
+    width: 95%;
+  }
+
+  .addictionsText2Title {
+    width: 80%;
+  }
+
+  /*Social support component*/
+
+  .socialSupportTitle {
+    height: 15%;
+    font-size: 1.5rem;
+  }
+
+  .socialSupportSection {
+    flex-direction: column;
+  }
+
+  .socialSupportText1 {
+    width: 95%;
+  }
+
+  .socialSupportText1Title {
+    width: 50%;
+  }
+
+  .socialSupportImage {
+    width: 95%;
+    height: 95%;
+  }
+
+  .socialSupportText2 {
+    width: 95%;
+  }
+
+  .socialSupportText2Title {
+    width: 75%;
+  }
+
+  /*Interpersonal relations component*/
 
   .interpersonalRelationsTitle {
     height: 15%;
