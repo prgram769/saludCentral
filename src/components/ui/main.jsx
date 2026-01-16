@@ -22,7 +22,7 @@ function MainPage({nPage, setNPage}) {
 
   return (
     <main className="m-3 rounded flex flex-col justify-center items-center">
-      <h1 className="h bg-blue-400 m-3 w-65 px-2 py-1 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
+      <h1 className="h bg-blue-400 m-3 w-67 px-2 py-2 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
         Salud física
       </h1>
       <div className="w-full flex justify-center items-center">
@@ -37,7 +37,7 @@ function MainPage({nPage, setNPage}) {
           onClick={changePage}
         />
       </div>
-      <h1 className="h bg-blue-400 m-3 w-70 px-2 py-1 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
+      <h1 className="h bg-blue-400 m-3 w-70 px-2 py-2 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
         Salud mental
       </h1>
       <div className="w-full flex justify-center items-center">
@@ -52,7 +52,7 @@ function MainPage({nPage, setNPage}) {
           onClick={changePage}
         />
       </div>
-      <h1 className="h bg-blue-400 m-3 w-67 px-2 py-1 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
+      <h1 className="h bg-blue-400 m-3 w-67 px-2 py-2 flex justify-center items-center h-20 font-bold text-[40px] text-black rounded">
         Salud social
       </h1>
       <div className="w-full flex justify-center items-center">
