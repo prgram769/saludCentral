@@ -28,10 +28,17 @@ body {
 
 html.dark body {
   background-color: #222;
+  transition: ease-in-out 0.5s;
 }
 
 html.light body {
   background-color: white;
+  transition: ease-in-out 0.5s;
+}
+
+.btn {
+  scale: 1;
+  transition: ease-in 0.15s;
 }
 
 .btn:hover {
