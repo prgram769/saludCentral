@@ -268,7 +268,8 @@ html.light body {
   /*Main and buttons*/
 
   .btn {
-    width: 50%;
+    width: 25%;
+    height: 50%;
     font-size: 1.5rem;
   }
 
@@ -398,31 +399,44 @@ html.light body {
 
   .commonConditionsTitle {
     height: 15%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .commonConditionsImage {
-    height: 95%;
-    width: 95%;
+    height: 55%;
+    width: 55%;
   }
 
   .commonConditionsConclusion {
     width: 95%;
   }
 
+  .commonConditionsConclusion p {
+    font-size: 1rem;
+  }
+
   .commonConditionsList {
     width: 95%;
   }
 
+  .commonConditionsSectionDiv h2 {
+    font-size: 1.5rem;
+  }
+
+  .commonConditionsList li {
+    font-size: 1rem;
+  }
+
   .commonConditionsConclusionTitle {
     width: 75%;
+    font-size: 1.5rem;
   }
 
   /*Addictions component*/
 
   .addictionsTitle {
     height: 15%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .addictionsSection {
@@ -433,24 +447,38 @@ html.light body {
     width: 95%;
   }
 
+  .addictionsText1 h2 {
+    width: 30%;
+    font-size: 1.5rem;
+  }
+  
+  .addictionsText1 p {
+    font-size: 1rem;
+  }
+
   .addictionsImage {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
   }
 
   .addictionsText2 {
     width: 95%;
   }
 
+  .addictionsText2 li {
+    font-size: 1rem;
+  }
+
   .addictionsText2Title {
-    width: 80%;
+    width: 50%;
+    font-size: 1.5rem;
   }
 
   /*Social support component*/
 
   .socialSupportTitle {
     height: 15%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .socialSupportSection {
@@ -461,28 +489,38 @@ html.light body {
     width: 95%;
   }
 
+  .socialSupportText1 p {
+    font-size: 1rem;
+  }
+
   .socialSupportText1Title {
     width: 50%;
+    font-size: 1.5rem;
   }
 
   .socialSupportImage {
-    width: 95%;
-    height: 95%;
+    width: 75%;
+    height: 75%;
   }
 
   .socialSupportText2 {
     width: 95%;
   }
 
+  .socialSupportText2 p {
+    font-size: 1rem;
+  }
+
   .socialSupportText2Title {
-    width: 75%;
+    width: 55%;
+    font-size: 1.5rem;
   }
 
   /*Interpersonal relations component*/
 
   .interpersonalRelationsTitle {
     height: 15%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .interpersonalRelationsSection {
@@ -493,20 +531,30 @@ html.light body {
     width: 95%;
   }
 
+  .interpersonalRelationsText1 p {
+    font-size: 1rem;
+  }
+
   .interpersonalRelationsText1Title {
-    width: 75%;
+    width: 35%;
+    font-size: 1.5rem;
   }
 
   .interpersonalRelationsText2 {
     width: 95%;
   }
 
+  .interpersonalRelationsText2 p {
+    font-size: 1rem;
+  }
+
   .interpersonalRelationsText2Title {
-    width: 65%;
+    width: 35%;
+    font-size: 1.5rem;
   }
 
   .interpersonalRelationsImage {
-    width: 95%;
-    height: 95%;
+    width: 75%;
+    height: 75%;
   }
 }

@@ -15,7 +15,7 @@ function CommonConditions({ nPage, setNPage }) {
           CONDICIONES PSICOLÓGICAS MÁS COMUNES
         </h1>
         <section className="commonConditionsSection flex flex-1 justify-center items-center">
-          <div className="border-2 w-90 m-2 px-2 py-1 rounded-3xl border-blue-700 bg-blue-300">
+          <div className="commonConditionsSectionDiv border-2 w-90 m-2 px-2 py-1 rounded-3xl border-blue-700 bg-blue-300">
             <h2 className="font-bold text-[20px] text-center m-auto px-2 py-1 border-b w-1/2">
               Condiciones más comunes:
             </h2>
