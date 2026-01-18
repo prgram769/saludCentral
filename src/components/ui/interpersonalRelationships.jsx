@@ -1,6 +1,10 @@
 import { Button } from "./button";
 
 function InterpersonalRelationships({ nPage, setNPage }) {
+  function goWiki() {
+    window.open("https://es.wikipedia.org/wiki/Relaci%C3%B3n_interpersonal");
+  }
+
   function changeMain() {
     if (nPage != 0) {
       setNPage(0);
@@ -56,15 +60,11 @@ function InterpersonalRelationships({ nPage, setNPage }) {
       </main>
       <footer>
         <div className="flex justify-center items-center bg-purple-200">
-          <p className="btn text-center bg-purple-300 rounded font-bold px-2 py-1 m-2">
-            <a
-              href="https://es.wikipedia.org/wiki/Relaci%C3%B3n_interpersonal"
-              target="_blank"
-              rel="noopener"
-            >
-              Página web de la información (wikipedia)
-            </a>
-          </p>
+          <Button
+            text={"Página de la información"}
+            onClick={goWiki}
+            className="btn text-center bg-purple-300 rounded font-bold px-2 py-1 m-2"
+          />
           <Button
             text={"Página principal"}
             onClick={changeMain}

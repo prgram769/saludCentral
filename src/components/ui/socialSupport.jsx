@@ -1,6 +1,11 @@
 import { Button } from "./button";
 
 function SocialSupport({ nPage, setNPage }) {
+  
+  function goWiki() {
+    window.open("https://es.wikipedia.org/wiki/Apoyo_social");
+  }
+
   function changeMain() {
     if (nPage != 0) {
       setNPage(0);
@@ -56,15 +61,7 @@ function SocialSupport({ nPage, setNPage }) {
       </main>
       <footer>
         <div className="flex justify-center items-center bg-indigo-300">
-          <p className="btn text-center bg-indigo-400 px-2 py-1 rounded font-bold m-2">
-            <a
-              href="https://es.wikipedia.org/wiki/Apoyo_social"
-              target="_blank"
-              rel="noopener"
-            >
-              Página de informacion (Wikipedia)
-            </a>
-          </p>
+          <Button text={"Página de la información"} onClick={goWiki} className="btn text-center bg-indigo-400 px-2 py-1 rounded font-bold m-2"/>
           <Button
             text={"Página principal"}
             className={

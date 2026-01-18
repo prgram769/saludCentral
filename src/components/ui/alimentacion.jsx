@@ -7,6 +7,12 @@ function Alimentacion({ nPage, setNPage }) {
     }
   }
 
+  function goWiki() {
+    window.open(
+      "https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet",
+    );
+  }
+
   return (
     <main className="alimentationMain flex flex-1 flex-col">
       {" "}
@@ -113,15 +119,11 @@ function Alimentacion({ nPage, setNPage }) {
         </div>
       </section>
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
-        <p className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5">
-          <a
-            href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Página originaria de la información (OMS)
-          </a>
-        </p>
+        <Button
+          onClick={goWiki}
+          text={"Página de la información"}
+          className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5"
+        />
         <Button
           text={"Página principal"}
           className={

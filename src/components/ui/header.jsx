@@ -6,8 +6,8 @@ const { Button } = require("./button");
 
 function Header() {
   const {theme, setTheme} = useTheme();
-  
-  const handleClick = () => { 
+
+  const handleClick = () => {
     if (theme == "light") {
       setTheme("dark");
     } else if (theme == "dark") {

@@ -87,6 +87,10 @@ html.light body {
     font-size: 0.8rem;
   }
 
+  .discordLink {
+    font-size: 0.8rem;
+  }
+
   /*Alimentation component*/
 
   .alimentationSection {
@@ -301,6 +305,10 @@ html.light body {
   }
 
   .footer {
+    font-size: 1.5rem;
+  }
+
+  .discordLink {
     font-size: 1.5rem;
   }
 
