@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./button";
 
 function Addictions({ nPage, setNPage }) {
@@ -23,10 +24,12 @@ function Addictions({ nPage, setNPage }) {
             la salud.
           </p>
         </div>
-        <img
+        <Image
           src="/imagenAdicciones.jpg"
           alt="Addictions image"
-          className="addictionsImage w-180 h-120 px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
+          width={180}
+          heigh={120}
+          className="addictionsImage px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
         />
         <div className="addictionsText2 border-2 m-2 rounded-3xl px-2 py-1 bg-cyan-200 border-blue-800 w-80">
           <h2 className="addictionsText2Title text-[20px] font-bold text-center border-b w-7/12 m-auto">
