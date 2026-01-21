@@ -27,8 +27,8 @@ function Addictions({ nPage, setNPage }) {
         <Image
           src="/imagenAdicciones.jpg"
           alt="Addictions image"
-          width={180}
-          heigh={120}
+          width={4 * 180}
+          height={4 * 120}
           className="addictionsImage px-4 py-4 m-2 rounded-3xl border-2 bg-cyan-100 border-blue-800"
         />
         <div className="addictionsText2 border-2 m-2 rounded-3xl px-2 py-1 bg-cyan-200 border-blue-800 w-80">

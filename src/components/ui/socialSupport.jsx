@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./button";
 
 function SocialSupport({ nPage, setNPage }) {
@@ -34,7 +35,9 @@ function SocialSupport({ nPage, setNPage }) {
               individuo sean satisfechas por medio de la interacción con otros.
             </p>
           </div>{" "}
-          <img
+          <Image
+            height={274.19}
+            width={354}
             src="/imagenApoyoSocial.jpg"
             alt="Social support image"
             className="socialSupportImage border-2 px-4 m-2 py-4 rounded-3xl bg-indigo-200 border-blue-600"

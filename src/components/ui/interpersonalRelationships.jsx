@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./button";
 
 function InterpersonalRelationships({ nPage, setNPage }) {
@@ -51,7 +52,9 @@ function InterpersonalRelationships({ nPage, setNPage }) {
               culturales que los rodea.
             </p>
           </div>
-          <img
+          <Image
+            height={195}
+            width={354}
             src="/imagenRelaciones.jpg"
             alt="relationships image"
             className="interpersonalRelationsImage border-2 border-indigo-500 bg-purple-200 px-4 py-4 rounded-3xl m-2"

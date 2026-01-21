@@ -1,3 +1,4 @@
+import Image from "next/image";
 const { Button } = require("./button");
 
 function CommonConditions({ nPage, setNPage }) {
@@ -76,8 +77,10 @@ function CommonConditions({ nPage, setNPage }) {
               </li>
             </ul>
           </div>
-          <img
-            className="commonConditionsImage border-2 h-100 w-125 px-4 bg-blue-200 py-4 m-2 border-blue-700 rounded-3xl"
+          <Image
+            height={4 * 100}
+            width={4 * 125}
+            className="commonConditionsImage border-2 px-4 bg-blue-200 py-4 m-2 border-blue-700 rounded-3xl"
             src="/imagenCondicionPsicologica.jpg"
             alt="Psycologycal image"
           />

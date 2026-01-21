@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./button";
 
 function GymRoutine({ nPage, setNPage }) {
@@ -134,10 +135,12 @@ function GymRoutine({ nPage, setNPage }) {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img
+            <Image
+              height={4 * 100}
+              width={4 * 160}
               src="/dietImage.png"
               alt="diet image"
-              className="dietImage h-100 w-160 border-2 px-4 py-4 border-red-600 bg-rose-200 rounded-3xl"
+              className="dietImage border-2 px-4 py-4 border-red-600 bg-rose-200 rounded-3xl"
             />
           </div>
         </section>

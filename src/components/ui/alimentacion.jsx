@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./button";
 
 function Alimentacion({ nPage, setNPage }) {
@@ -63,8 +64,11 @@ function Alimentacion({ nPage, setNPage }) {
             </li>
           </ul>
         </div>
-        <img
-          className="alimentationImg px-4 py-4 m-3 border-2 bg-lime-100 rounded-3xl border-orange-300 h-120 w-160"
+        <Image
+          height={4 * 120}
+          width={4 * 160}
+          alt="alimentation image of a healthy diet"
+          className="alimentationImg px-4 py-4 m-3 border-2 bg-lime-100 rounded-3xl border-orange-300"
           src="/platoOMSwikipedia.jpg"
         />
         <div className="alimentationText2 border-2 bg-lime-100 rounded-3xl border-orange-300 text-center text-[13px] w-130 m-2">
