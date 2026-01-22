@@ -1,7 +1,9 @@
-import Image from "next/image";
-import { Button } from "./button";
+"use client";
 
-function Alimentacion({ nPage, setNPage }) {
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
+export default function Alimentacion({ nPage, setNPage }) {
   function changeMainPage() {
     if (nPage != 0) {
       setNPage(0);
@@ -124,8 +126,10 @@ function Alimentacion({ nPage, setNPage }) {
       </section>
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
         <Button
-          onClick={goWiki}
+          // onClick={goWiki}
+          href={"https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"}
           text={"Página de la información"}
+          onClick={null}
           className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5"
         />
         <Button
@@ -133,7 +137,9 @@ function Alimentacion({ nPage, setNPage }) {
           className={
             "btn bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"
           }
-          onClick={changeMainPage}
+          href={"/"}
+          onClick={null}
+          // onClick={changeMainPage}
         />
       </footer>
     </main>
