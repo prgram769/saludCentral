@@ -8,19 +8,15 @@ function Button({ text, href, className, onClick }) {
   const router = useRouter();
 
   function playButton() {
-    playSound();
-    setTimeout(() => {
-      try {
-        onClick();
-      } catch (error) {
-        console.log(null);
-      }
-      try {
-        router.push(href);
-      } catch (error) {
-        console.log(null);
-      }
-    }, "150");
+    if (href) {
+      router.push(href);
+
+      playSound();
+    } else if (onClick) {
+      onClick();
+
+      playSound();
+    }
   }
 
   return (

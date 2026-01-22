@@ -126,10 +126,9 @@ export default function Alimentacion({ nPage, setNPage }) {
       </section>
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
         <Button
-          // onClick={goWiki}
-          href={"https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"}
+          onClick={goWiki}
+          // href={"https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"}
           text={"Página de la información"}
-          onClick={null}
           className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5"
         />
         <Button
