@@ -1,15 +1,11 @@
-import Image from "next/image";
-import { Button } from "./button";
+"use client";
 
-function InterpersonalRelationships({ nPage, setNPage }) {
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
+export default function InterpersonalRelationships() {
   function goWiki() {
     window.open("https://es.wikipedia.org/wiki/Relaci%C3%B3n_interpersonal");
-  }
-
-  function changeMain() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
   }
 
   return (
@@ -70,15 +66,13 @@ function InterpersonalRelationships({ nPage, setNPage }) {
           />
           <Button
             text={"Página principal"}
-            onClick={changeMain}
             className={
               "btn bg-purple-300 rounded w-1/12 px-2 py-1 m-2 font-bold"
             }
+            href={"/"}
           />
         </div>
       </footer>
     </>
   );
 }
-
-export { InterpersonalRelationships };

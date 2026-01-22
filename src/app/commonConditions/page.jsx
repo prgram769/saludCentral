@@ -1,13 +1,9 @@
+"use client";
+
 import Image from "next/image";
-const { Button } = require("./button");
+import { Button } from "@/components/ui/button";
 
-function CommonConditions({ nPage, setNPage }) {
-  function changeMain() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
-  }
-
+export default function CommonConditions() {
   return (
     <>
       {" "}
@@ -112,11 +108,9 @@ function CommonConditions({ nPage, setNPage }) {
         <Button
           text={"Página principal"}
           className={"btn px-2 py-1 bg-blue-400 m-2 rounded font-bold w-1/12"}
-          onClick={changeMain}
+          href={"/"}
         />
       </footer>
     </>
   );
 }
-
-export { CommonConditions };

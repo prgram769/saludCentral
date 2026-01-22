@@ -1,16 +1,12 @@
-import Image from "next/image";
-import { Button } from "./button";
+"use client";
 
-function SocialSupport({ nPage, setNPage }) {
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
+export default function SocialSupport() {
   
   function goWiki() {
     window.open("https://es.wikipedia.org/wiki/Apoyo_social");
-  }
-
-  function changeMain() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
   }
 
   return (
@@ -70,12 +66,10 @@ function SocialSupport({ nPage, setNPage }) {
             className={
               "btn bg-indigo-400 rounded w-1/12 px-2 py-1 m-2 font-bold"
             }
-            onClick={changeMain}
+            href={"/"}
           />
         </div>
       </footer>
     </>
   );
 }
-
-export { SocialSupport };

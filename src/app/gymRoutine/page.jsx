@@ -1,13 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "@/components/ui/button";
 
-function GymRoutine({ nPage, setNPage }) {
-  function changeMain() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
-  }
-
+export default function GymRoutine() {
   return (
     <>
       {" "}
@@ -149,11 +145,9 @@ function GymRoutine({ nPage, setNPage }) {
         <Button
           text={"Página principal"}
           className={"btn px-2 py-1 bg-rose-700 rounded m-2 font-bold w-1/12"}
-          onClick={changeMain}
+          href={"/"}
         />
       </footer>
     </>
   );
 }
-
-export { GymRoutine };

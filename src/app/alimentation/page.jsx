@@ -3,13 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function Alimentacion({ nPage, setNPage }) {
-  function changeMainPage() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
-  }
-
+export default function Alimentation() {
   function goWiki() {
     window.open(
       "https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet",
@@ -127,7 +121,6 @@ export default function Alimentacion({ nPage, setNPage }) {
       <footer className="bg-emerald-200 px-3 flex justify-center items-center">
         <Button
           onClick={goWiki}
-          // href={"https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet"}
           text={"Página de la información"}
           className="btn bg-emerald-100 font-bold rounded text-center px-2 py-1 m-2 mr-5"
         />
@@ -137,12 +130,8 @@ export default function Alimentacion({ nPage, setNPage }) {
             "btn bg-emerald-100 text-black font-bold rounded px-2 py-1 m-2"
           }
           href={"/"}
-          onClick={null}
-          // onClick={changeMainPage}
         />
       </footer>
     </main>
   );
 }
-
-export { Alimentacion };

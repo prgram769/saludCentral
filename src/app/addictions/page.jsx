@@ -1,13 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "@/components/ui/button";
 
-function Addictions({ nPage, setNPage }) {
-  function changeMain() {
-    if (nPage != 0) {
-      setNPage(0);
-    }
-  }
-
+export default function Addictions() {
   return (
     <main className="flex flex-1 flex-col">
       <h1 className="addictionsTitle text-[40px] bg-cyan-500 font-bold text-center">
@@ -97,11 +93,9 @@ function Addictions({ nPage, setNPage }) {
         <Button
           text={"Página principal"}
           className={"btn bg-cyan-300 rounded px-2 py-1 font-bold m-2 w-1/12"}
-          onClick={changeMain}
+          href={"/"}
         />
       </footer>
     </main>
   );
 }
-
-export { Addictions };
